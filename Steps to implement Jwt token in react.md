@@ -41,8 +41,8 @@ export const AuthProvider = ({ children }) => {
 
 export default AuthContext;
 ```
-```javascript
 # Create PrivateRoute.js to protect routes:
+```javascript
 import React, { useContext } from "react";
 import { Outlet, Navigate } from "react-router-dom";
 import AuthContext from "./AuthContext";
@@ -138,6 +138,8 @@ export { getProducts };
 ```
 
 # Header.jsx
+```javascript
+
 import React, { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import AuthContext from "./AuthContext";
@@ -307,6 +309,9 @@ export default ProductList;
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />`
 
+
+# for toastr 
+`npm install react-toastify`
     # App.jsx
 ```javascript
     import logo from "./logo.svg";
